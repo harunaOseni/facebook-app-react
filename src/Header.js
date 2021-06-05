@@ -6,6 +6,12 @@ import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
 import "./Header.css";
+import Avatar from "@material-ui/core/Avatar";
+import { ExpansionPanel, IconButton } from "@material-ui/core";
+import AddIcon from "@material-ui/icons/Add";
+import ForumIcon from "@material-ui/icons/Forum";
+import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const Header = () => {
   return (
@@ -42,7 +48,24 @@ const Header = () => {
       </div>
 
       {/* Header-Right */}
-      <div className="header-right"></div>
+      <div className="header-right">
+        <div className="header-info">
+          <Avatar />
+          <h4>haruna_oseni</h4>
+        </div>
+        <IconButton>
+          <AddIcon />
+        </IconButton>
+        <IconButton>
+          <ForumIcon />
+        </IconButton>
+        <IconButton>
+          <NotificationsActiveIcon />
+        </IconButton>
+        <IconButton>
+          <ExpandMoreIcon />
+        </IconButton>
+      </div>
     </div>
   );
 };
