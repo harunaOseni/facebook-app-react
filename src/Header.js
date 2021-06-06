@@ -24,13 +24,13 @@ const Header = () => {
         />
         <div className="header-input">
           <SearchIcon />
-          <input type="text" />
+          <input type="text" placeholder="Search Facebook" />
         </div>
       </div>
 
       {/* Header-Middle */}
       <div className="header-middle">
-        <div className="header-option">
+        <div className="header-option header-option-active">
           <HomeIcon />
         </div>
         <div className="header-option">
