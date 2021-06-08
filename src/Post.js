@@ -15,16 +15,14 @@ const Post = ({ profilePicture, image, username, timestamp, message }) => {
         <Avatar src={profilePicture} className="post-avatar" />
         <div className="post-topInfo">
           <h3>{username}</h3>
-          <p>{timestamp}</p>
+          <p>{new Date(timestamp?.toDate()).toDateString()}</p>
         </div>
       </div>
       {/* post-bottom */}
       <div className="post-message">
         <p>{message}</p>
       </div>
-      <div className="post-image">
-        {image && <img src={image} alt=""/> }
-      </div>
+      <div className="post-image">{image && <img src={image} alt="" />}</div>
       <div className="post-options">
         <div className="post-option">
           <ThumbUpIcon />
