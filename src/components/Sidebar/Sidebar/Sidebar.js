@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import SideBarRow from "./components/Sidebar/SideBarRow/SideBarRow";
+import { SideBarRow } from "../../../components";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import EmojiFlagsIcon from "@material-ui/icons/EmojiFlags";
 import PeopleIcon from "@material-ui/icons/People";
@@ -8,7 +8,7 @@ import ChatIcon from "@material-ui/icons/Chat";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import ExpandMoreOutLined from "@material-ui/icons/ExpandMore";
-import { useStateValue } from "./State Provider/Data Layer/StateProvider";
+import { useStateValue } from "../../../State Provider/StateProvider";
 
 const Sidebar = () => {
   const [{ user }, dispatch] = useStateValue();

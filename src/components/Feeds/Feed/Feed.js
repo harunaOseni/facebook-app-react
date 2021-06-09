@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Feed.css";
-import StoryReel from "./StoryReel";
-import MessageSender from "./MessageSender";
-import Post from "./Post";
-import db from "./firebase";
+import { StoryReel, MessageSender, Post } from "../../../components";
+import db from "../../../firebase";
 
 const Feed = () => {
   const [posts, setPosts] = useState([]);
@@ -36,7 +34,7 @@ const Feed = () => {
           username={post.data.username}
           image={post.data.image}
         />
-      ))} 
+      ))}
     </div>
   );
 };
