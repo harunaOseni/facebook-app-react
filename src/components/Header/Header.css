@@ -2,11 +2,12 @@
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   background-color: white;
   z-index: 100;
   top: 0;
   box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+  width: 97vw;
 }
 
 .header-left {
@@ -80,5 +81,4 @@
 
 .header-right {
   display: flex;
-  justify-content: flex-end;
 }

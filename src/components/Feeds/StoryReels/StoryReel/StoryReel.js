@@ -1,7 +1,7 @@
 import React from "react";
 import "./StoryReel.css";
 import Story from "./Story";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../../../../State Provider/Data Layer/StateProvider";
 
 const StoryReel = () => {
   const [{ user }, dispatch] = useStateValue();
